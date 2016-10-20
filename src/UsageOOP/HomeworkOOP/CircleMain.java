@@ -14,6 +14,7 @@ public class CircleMain {
         double x = 12.0;
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
+        System.out.println("Radius of second circle: ");
         String numberStr = bf.readLine();
         double number = Double.valueOf(numberStr);
 
