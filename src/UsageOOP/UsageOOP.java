@@ -17,7 +17,7 @@ public class UsageOOP {
         System.out.println("Height of the second rectangle is: " + rectangle2.getHeight());
         System.out.println("And width is: " + rectangle2.getWidth());
 
-        RectangleOOP r3 = RectangleOOP.Combine(rectangle1, rectangle2);
+        RectangleOOP r3 = RectangleOOP.combine(rectangle1, rectangle2);
         System.out.println("Dimensions of the new, combined rectangle is: " + r3.getHeight()
                 + "x" + r3.getWidth());
 

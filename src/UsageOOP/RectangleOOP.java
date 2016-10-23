@@ -11,7 +11,7 @@ public class RectangleOOP {
         height = 5;
     }
 
-    public static RectangleOOP Combine (RectangleOOP r1, RectangleOOP r2){
+    public static RectangleOOP combine(RectangleOOP r1, RectangleOOP r2){
         return new RectangleOOP(r1.width+r2.width, r1.height+r2.height);
     }
 

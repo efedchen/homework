@@ -18,7 +18,7 @@ public class CircleMain {
         String numberStr = bf.readLine();
         double number = Double.valueOf(numberStr);
 
-        System.out.println(circle1.CircleArea(x));
-        System.out.println(circle2.CircleArea(number));
+        System.out.println(circle1.circleArea(x));
+        System.out.println(circle2.circleArea(number));
     }
 }

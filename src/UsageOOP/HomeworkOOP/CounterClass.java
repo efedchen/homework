@@ -5,10 +5,10 @@ package UsageOOP.HomeworkOOP;
  */
 public class CounterClass {
     public static void main(String[] args) {
-        CounterInstance cI1 = new CounterInstance();
-        CounterInstance cI2 = new CounterInstance();
-        CounterInstance cI3 = new CounterInstance();
+        counterInstance cI1 = new counterInstance();
+        counterInstance cI2 = new counterInstance();
+        counterInstance cI3 = new counterInstance();
 
-        System.out.println(CounterInstance.counter);
+        System.out.println(counterInstance.counter);
     }
 }

@@ -9,24 +9,24 @@ public class AutomobileMain {
         Automobile bmw = new Automobile("BMW 5", 1.8);
         Automobile audi = new Automobile("Audi A3", 2);
 
-        bmw.EngineStatus (true);
-        bmw.EngineStatus (false);
-        bmw.EngineStatus (true);
-        bmw.Moves(45);
+        bmw.engineStatus(true);
+        bmw.engineStatus(false);
+        bmw.engineStatus(true);
+        bmw.moves(45);
 
-        audi.EngineStatus (true);
-        audi.Moves(65);
+        audi.engineStatus(true);
+        audi.moves(65);
 
-        bmw.StartAutoPilot(true);
-        audi.StartAutoPilot(true);
+        bmw.startAutoPilot(true);
+        audi.startAutoPilot(true);
 
-        System.out.println(audi.ConsumedFuel(120));
-        System.out.println(bmw.ConsumedFuel(300));
+        System.out.println(audi.consumedFuel(120));
+        System.out.println(bmw.consumedFuel(300));
 
-        bmw.StartAutoPilot(false);
-        audi.StartAutoPilot(false);
+        bmw.startAutoPilot(false);
+        audi.startAutoPilot(false);
 
-        bmw.EngineStatus(false);
-        audi.EngineStatus(false);
+        bmw.engineStatus(false);
+        audi.engineStatus(false);
     }
 }
