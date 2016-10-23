@@ -8,6 +8,10 @@ public class StudentList {
     private ArrayList<Student> list = new ArrayList<>();
     private int counter=0;
 
+    public int getCounter() {
+        return counter;
+    }
+
     public void add(Student st){
         list.add(counter++,st);
         //list [counter++]=st;
