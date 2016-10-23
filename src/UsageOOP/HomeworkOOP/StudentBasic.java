@@ -1,6 +1,7 @@
 package UsageOOP.HomeworkOOP;
 
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class StudentBasic {
@@ -18,13 +19,23 @@ public class StudentBasic {
                 stList.get(searchName).getBirthday().toString());
 
         int searchSurname = stList.findSurname("Torwalds");
-        System.out.println("Search by surname: "+
-                stList.get(searchSurname).getBirthday().toString());
+        System.out.println("Search by surname:"+ stList.get(searchSurname).getSurname()
+                +", Bday - "+stList.get(searchSurname).getBirthday().toString());
 
         int searchBDate = stList.findBirthday(new Date(1990, 2, 10));
+
         System.out.println("Search by birth date: "+
                 stList.get(searchBDate).getSurname().toString()+" "+
                 stList.get(searchBDate).getName().toString());
-        stList.delStudent("Kochanowski");
+
+        searchSurname = stList.findSurname("Kochanowski");
+        System.out.println("The name of the student is: " +
+                stList.getList().get(searchName).getName()+" are you still want to remove?");
+        stList.getList().remove(searchSurname);
+        System.out.println("That student is removed!");
+        System.out.println("__________________________________");
+        String arr[]= new String[5];
+        String tempStr = Arrays.toString(stList.getList().toArray());
+        System.out.println(tempStr);
     }
 }

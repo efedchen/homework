@@ -13,6 +13,10 @@ public class StudentList {
         //list [counter++]=st;
     }
 
+    public ArrayList<Student> getList() {
+        return list;
+    }
+
     public Student get(int number){
         return list.get(number);
 //        return list[number];
@@ -43,14 +47,19 @@ public class StudentList {
         } return -1;
     }
 
-    public void delStudent(String surname){
+//    public void delStudent(String surname){
+//        for (int i = 0; i < counter; i++) {
+//            if(list.get(i).getSurname().equalsIgnoreCase(surname)){
+//                //int count=+i;
+//                list.remove(i);
+//                break;
+//            }
+//        }System.out.println("There is no student with such surname.");
+//    }
+    public int delStudent(String surname){
         for (int i = 0; i < counter; i++) {
-            if(list.get(i).getSurname().equalsIgnoreCase(surname)){
-                //int count=+i;
-                list.remove(i);
-                break;
-
-            }
-        }System.out.println("There is no student with such surname.");
+            if(list.get(i).getSurname().equalsIgnoreCase(surname))
+                return i;
+        }return -1;
     }
 }
