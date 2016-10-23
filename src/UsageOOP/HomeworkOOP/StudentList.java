@@ -8,10 +8,6 @@ public class StudentList {
     private ArrayList<Student> list = new ArrayList<>();
     private int counter=0;
 
-    public int getCounter() {
-        return counter;
-    }
-
     public void add(Student st){
         list.add(counter++,st);
         //list [counter++]=st;
@@ -51,15 +47,6 @@ public class StudentList {
         } return -1;
     }
 
-//    public void delStudent(String surname){
-//        for (int i = 0; i < counter; i++) {
-//            if(list.get(i).getSurname().equalsIgnoreCase(surname)){
-//                //int count=+i;
-//                list.remove(i);
-//                break;
-//            }
-//        }System.out.println("There is no student with such surname.");
-//    }
     public int delStudent(String surname){
         for (int i = 0; i < counter; i++) {
             if(list.get(i).getSurname().equalsIgnoreCase(surname))

@@ -34,9 +34,7 @@ public class StudentBasic {
         stList.getList().remove(searchSurname);
         System.out.println("That student is removed!");
         System.out.println("__________________________________");
-      /*  String arr[]= new String[5];
-        String tempStr = Arrays.toString(stList.getList().toArray());
-        System.out.println(tempStr);*/
+
         for (int i = 0; i < 4; i++) {  //checking if the student is removed
             System.out.println(stList.getList().get(i).getSurname());
         }
