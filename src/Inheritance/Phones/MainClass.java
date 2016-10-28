@@ -1,9 +1,9 @@
-package Phones;
+package Inheritance.Phones;
 
 public class MainClass {
 
 	public static void main(String[] args) {
-		// Phones p = new Phones(); error because that class is abstract - basic class
+		// Inheritance.Phones p = new Inheritance.Phones(); error because that class is abstract - basic class
 		
 		Nokia3310 nokia = new Nokia3310();
 		Nokia3310 nokia1 = new Nokia3310();

@@ -1,9 +1,10 @@
-package Phones;
+package Inheritance.Phones;
 
 public class IPhone extends Phone {
 	
 	public IPhone() {
-		System.out.println("IPhone constructor");
+		System.out.println("IPhone constructor"
+		);
 		touch = true;
 		hasWifi = true;
 		screenSize = 3;

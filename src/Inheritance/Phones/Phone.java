@@ -1,4 +1,4 @@
-package Phones;
+package Inheritance.Phones;
 
 
 public abstract class Phone {

@@ -1,4 +1,4 @@
-package Phones;
+package Inheritance.Phones;
 
 public class Nokia3310 extends Phone {
 	

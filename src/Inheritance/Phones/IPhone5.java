@@ -1,4 +1,4 @@
-package Phones;
+package Inheritance.Phones;
 
 public class IPhone5 extends IPhone {
 	
