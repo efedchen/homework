@@ -6,8 +6,9 @@ public abstract class Phone {
 	protected boolean touch;
 	protected boolean hasWifi;
 	protected int screenSize;
-    protected int objQuantity;  //int os initialized by 0
-	
+    protected int smsQuantity;  //int automatically initialized by 0
+    protected int callQuantity;  //int automatically initialized by 0
+
 	public Phone() {System.out.println("Phone constructor");}
 	
 	public boolean isTouch() {
@@ -23,8 +24,11 @@ public abstract class Phone {
 	}
 	
 	public void call(String number) {
-		System.out.println("Phone class is calling " + number);
+		callQuantity++;
+		System.out.println("Phone class is calling " + number
+                + ". Phone called = " + callQuantity + " times.");
 	}
-	
+
+    //abstract method cannot have a body
 	public abstract void sendSMS(String number, String message);
 }
