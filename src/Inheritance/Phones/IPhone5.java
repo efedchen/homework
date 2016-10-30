@@ -1,8 +1,9 @@
 package Inheritance.Phones;
 
 public class IPhone5 extends IPhone {
-	
-	public IPhone5() {
+
+	public IPhone5(String ownNumb){
+        super( );
 		System.out.println("IPhone5 constructor");
 		screenSize = 4;
 	}

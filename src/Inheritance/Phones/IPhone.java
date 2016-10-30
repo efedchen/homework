@@ -1,18 +1,24 @@
 package Inheritance.Phones;
 
 public class IPhone extends Phone {
-	
-	public IPhone() {
-		System.out.println("IPhone constructor");
+	private int ownNumb;
+
+	public IPhone(String ownNumb) {
+        ContactList.addNumb(ownNumb);
+        System.out.println("IPhone constructor");
 		touch = true;
 		hasWifi = true;
 		screenSize = 3;
 	}
-	
+
+
     @Override
 	final public void call(String number) {
         super.call(number);
-        System.out.println("IPHONE!");
+        if (ContactList.checkAvail(number)==true){
+            System.out.println("Iphone called, and phone with number: "
+                    + number + " answered. Success!");
+        }
     }
 	
 	@Override

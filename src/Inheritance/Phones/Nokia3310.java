@@ -2,7 +2,8 @@ package Inheritance.Phones;
 
 public class Nokia3310 extends Phone {
 	
-	public Nokia3310() {
+	public Nokia3310(String ownNumb) {
+        ContactList.addNumb(ownNumb);
 		System.out.println("Nokia3310 constructor");
 		touch = false;
 		hasWifi = false;
