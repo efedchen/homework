@@ -8,7 +8,7 @@ public class ArrayListUsage {
 
     public static void main(String[] args) {
         //in the collections couldnt be stored primitive types  of data
-        ArrayList myLotteryNumbers = new ArrayList();
+        ArrayList <Integer> myLotteryNumbers = new ArrayList();
         myLotteryNumbers.add(new Integer(65));
         myLotteryNumbers.add(new Integer(32));
         myLotteryNumbers.add(new Integer(34));

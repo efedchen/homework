@@ -4,7 +4,7 @@ public class Nokia3310 extends Phone {
 	
 	public Nokia3310(String ownNumb) {
         ContactList.addNumb(ownNumb);
-		System.out.println("Nokia3310 constructor");
+//		System.out.println("Nokia3310 constructor");
 		touch = false;
 		hasWifi = false;
 		screenSize = 2;
@@ -13,13 +13,18 @@ public class Nokia3310 extends Phone {
 	@Override
 	public void call(String number) {
 		super.call(number);
-		System.out.println("Nokia3310 class is calling " + number);
+		if (ContactList.checkAvail(number)==true){
+			System.out.println("Nokia3310 called, and phone with number: "
+					+ number + " answered. Success!");
+		} else {
+            System.out.println("That phone number is unavailable");
+        }
 	}
 	
 	@Override
 	public void sendSMS(String number, String message) {
 		smsQuantity++;
 		System.out.println("Nokia3310 class is sending sms " + message
-                + " to " + number + ". Nokia sended sms " + smsQuantity + " times.");
+                + " to " + number + ". Nokia sended sms"+ smsQuantity + " times.");
 	}
 }

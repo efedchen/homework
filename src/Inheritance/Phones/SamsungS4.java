@@ -2,8 +2,9 @@ package Inheritance.Phones;
 
 public class SamsungS4 extends Phone{
 
-    public SamsungS4 (){
-        System.out.println("samsung s4 constructor");
+    public SamsungS4 (String ownNumb){
+        ContactList.addNumb(ownNumb);
+//        System.out.println("samsung s4 constructor");
         touch = true;
         hasWifi = true;
         screenSize = 5;

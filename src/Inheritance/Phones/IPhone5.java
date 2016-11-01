@@ -2,13 +2,12 @@ package Inheritance.Phones;
 
 public class IPhone5 extends IPhone {
 
-	public IPhone5(String ownNumb){
-        super( );
-		System.out.println("IPhone5 constructor");
-		screenSize = 4;
+	public IPhone5(String ownNumb) {
+		super(ownNumb);
+//        System.out.println("IPhone5 constructor");
+        screenSize = 4;
 	}
-	
-	/*@Override
+    /*@Override
 	public void call(String number) {
 		System.out.println("IPhone class is calling " + number);
 	}*/ // error because that method is final

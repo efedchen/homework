@@ -7,7 +7,8 @@ public class MainClass {
 		
 		Nokia3310 nokia = new Nokia3310("843-12-12");
 		IPhone iphone1 = new IPhone("547-35-61");
-
+        SamsungS4 samsungS4 = new SamsungS4("123-45-67");
+        
 		System.out.println("Nokia3310 screen size: " + nokia.getScreenSize());
 		nokia.call("123-45-67");
 		nokia.call("547-35-61");
