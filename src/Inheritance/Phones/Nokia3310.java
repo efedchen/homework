@@ -14,7 +14,7 @@ public class Nokia3310 extends Phone {
 	public void call(String number) {
 		super.call(number);
 		if (ContactList.checkAvail(number)==true){
-			System.out.println("Nokia3310 called, and phone with number: "
+			System.out.println("Nokia 3310 called, and phone with number: "
 					+ number + " answered. Success!");
 		} else {
             System.out.println("That phone number is unavailable");

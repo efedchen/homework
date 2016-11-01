@@ -26,7 +26,7 @@ public abstract class Phone {
 	public void call(String number) {
 		callQuantity++;
 		System.out.println("Phone class is calling " + number
-                + ". Phone called = " + callQuantity + " times.");
+                + ". Phone  class called = " + callQuantity + " times.");
 	}
 
     //abstract method cannot have a body

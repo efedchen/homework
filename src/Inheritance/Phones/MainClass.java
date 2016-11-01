@@ -9,7 +9,7 @@ public class MainClass {
 		IPhone iphone1 = new IPhone("547-35-61");
         SamsungS4 samsungS4 = new SamsungS4("123-45-67");
         
-		System.out.println("Nokia3310 screen size: " + nokia.getScreenSize());
+		System.out.println("Nokia 3310 screen size: " + nokia.getScreenSize());
 		nokia.call("123-45-67");
 		nokia.call("547-35-61");
 		nokia.call("999-45-99");

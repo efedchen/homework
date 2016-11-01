@@ -11,7 +11,7 @@ public class SamsungS4 extends Phone{
     }
     @Override
     public void sendSMS(String number, String message) {
-        System.out.println("Samsung s4 sended sms, from number: "+number+
+        System.out.println("Samsung S4 sended sms, from number: "+number+
         ".Hello, the message is: "+ message);
     }
 }

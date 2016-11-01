@@ -16,9 +16,9 @@ public class IPhone extends Phone {
 	final public void call(String number) {
         super.call(number);
         if (ContactList.checkAvail(number)==true){
-            System.out.println("Iphone called, and phone with number: "
+            System.out.println("IPhone called, and phone with number: "
                     + number + " answered. Success!");
-        } else {
+		} else {
 			System.out.println("That phone number is unavailable");
         }
     }
