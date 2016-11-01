@@ -1,4 +1,4 @@
-package Polymorphism.Homework.Developers.src;
+package Polymorphism.Homework.Developers;
 
 public class TeamLeadDeveloper extends Developer {
 
