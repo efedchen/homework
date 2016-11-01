@@ -7,7 +7,7 @@ import java.util.Random;
 public class ArrayListUsage {
 
     public static void main(String[] args) {
-        //in the collections couldnt be stored primitive types  of data
+        //in the collections couldn't be stored primitive types  of data
         ArrayList <Integer> myLotteryNumbers = new ArrayList();
         myLotteryNumbers.add(new Integer(65));
         myLotteryNumbers.add(new Integer(32));
