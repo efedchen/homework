@@ -3,30 +3,29 @@ package Interfaces.Monitors;
 import java.io.File;
 
 public class Monitors {
-	String file;
-	IFileEvent event;
 
-	public Monitors(String file, IFileEvent event) {
-		this.file = file;
+	IFileEvent event;
+	String filef;
+
+	public Monitors(String file , IFileEvent event) {
+        this.filef = file;
 		this.event = event;
 	}
 
 	public void start() {
-		while (true) {
-			File f = new File(file);
+        while (true){
+            File f = new File(filef);
 
-			if (f.exists() && f.isFile()) {
-				if (event != null)
-					event.onFileAdded(file);
+            if (f.exists() && f.isFile()) {
+                if (event != null)
+                    event.onFileAdded(filef);
+                break;
+            }
 
-				break;
-			}
-
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {}
-
-			System.out.println("Waiting...");
-		}
-	}
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {}
+            System.out.println("Waiting...");
+        }
+    }
 }
