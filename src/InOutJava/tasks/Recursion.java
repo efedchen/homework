@@ -1,6 +1,7 @@
 package InOutJava.tasks;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -8,30 +9,21 @@ import java.util.ArrayList;
 //than 5 symbols and second letter  is "A"
 
 class MyClass {
-/*	private static boolean specFunction (String title){
-		if (title.toCharArray().length>8){
-			return false;
+	static class MyFileFilter implements FilenameFilter {
+
+		public MyFileFilter() {
 		}
-		return true;
+
+		public boolean accept(File dir, String name) {
+			return name.lastIndexOf("")>=5&&name.charAt(1)=='a';
+		}
 	}
-	private static File[] checkTitle(File [] f) {
-		for (File file : f) {
-			if (specFunction(file.getName())) {
-				for (int i = 0; i < f.length; i++) {
-					File[] list2 = new File[f.length - 1];
-					System.arraycopy(f, 0, list2, 0, i);
-					System.arraycopy(f, i + 1, list2, i, f.length - i - 1);
-					return list2;
-				}
-			}
-		}return f;
-	}
-*/	private static void listAll(String path, ArrayList<String> res)
-		throws IOException 
+
+	private static void listAll(String path, ArrayList<String> res)
+		throws IOException
 	{
 		File dir = new File(path);
-		File[] list = dir.listFiles();
-//		checkTitle(list);
+		File[] list = dir.listFiles(new MyFileFilter());
 		for (File f : list) {
 			if (f.isFile()) {
 				res.add("File_____: " + f.getAbsolutePath());
@@ -41,11 +33,11 @@ class MyClass {
 			}
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		final String path = "E:\\javaLessons\\lessons\\src\\InOutJava";
 		ArrayList<String> res = new ArrayList<String>();
-		
+
 		try {
 			listAll(path, res);
 		} catch (IOException e) {
