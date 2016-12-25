@@ -2,6 +2,9 @@ package Multithreading.task5;
 
 import java.util.Random;
 
+
+//multithread count of array elements total, with a comparison of a speed with simple algrthm
+
 public class SumOfArrayTest {
     public static void main(String[] args) {
         int arraySize = 250000000;
