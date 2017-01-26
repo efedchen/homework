@@ -1,0 +1,1 @@
+Create own implementation of 'hashcode' and 'equals'

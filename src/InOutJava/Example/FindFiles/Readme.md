@@ -1,0 +1,1 @@
+program should find all the files at the directory with listed extensions

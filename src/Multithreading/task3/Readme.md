@@ -1,0 +1,1 @@
+creates 50 threads, they wait for interrupting. Interrupting is invoked from main thread

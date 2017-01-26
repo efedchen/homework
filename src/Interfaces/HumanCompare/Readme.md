@@ -1,0 +1,1 @@
+sorts the array using 'comparator'

@@ -1,0 +1,1 @@
+program copyies the file into destination folder

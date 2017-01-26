@@ -1,0 +1,1 @@
+program collects info about specified directory into file
