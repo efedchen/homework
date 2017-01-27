@@ -1,0 +1,1 @@
+create method that counts quantity of operations needed to find the minus at the array
